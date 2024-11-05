@@ -168,7 +168,6 @@ button:focus-visible {
 }
 
 .wrap {
-  padding-left: 5px;
   width: 300px;
   height: 100%;
   position: absolute;
@@ -180,10 +179,19 @@ button:focus-visible {
   background-color: #0c3822f7;
   font-size: 48px;
   backdrop-filter: blur 3px;
+  height: 1079px;
+}
+
+.pl-1 {
+  padding-left: 5px;
 }
 
 .p-1 {
   padding: 5px;
+}
+
+.pb-1 {
+  padding-bottom: 5px;
 }
 
 .w-100 {
@@ -236,4 +244,20 @@ button:focus-visible {
   text-align: center;
   border-radius: 3px;
   user-select: none;
+}
+
+* {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+.mt-1 {
+  margin-top: 5px;
+}
+
+.main-btm {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
 }

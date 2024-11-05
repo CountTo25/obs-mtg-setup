@@ -38,7 +38,7 @@
 <main>
   <div class="wrap">
     <div class="hp"><span>{health} {$labels.health[$lang]}</span></div>
-    <div class="hp">
+    <div class="hp pl-1">
       <div class="cmd-dmg-title-label">{$labels.commanderDamage[$lang]}</div>
       <CommanderDamage />
       <CommanderDamage />
@@ -47,10 +47,30 @@
     </div>
     <div class="cmd-dmg-title-label">{$labels.floatingMana[$lang]}</div>
     <FloatingMana />
-    <div class="text-xsm text-center text-xlight">
-      {$labels.timeSinceGameStart[$lang]}: {formatTime(
-        currentTime - gameStartedAt
-      )}
+    <div class="main-btm pb-1">
+      <div class="text-xsm text-center text-xlight p-1">
+        <div
+          on:click={() => {
+            console.log($lang);
+            if ($lang === "en") {
+              $lang = "jp";
+              return;
+            }
+            if ($lang === "jp") {
+              $lang = "en";
+              return;
+            }
+          }}
+          class="p-1 w-100 btn-big"
+        >
+          {$labels.changeLanguage[$lang]}
+        </div>
+      </div>
+      <div class="text-xsm text-center text-xlight">
+        {$labels.timeSinceGameStart[$lang]}: {formatTime(
+          currentTime - gameStartedAt
+        )}
+      </div>
     </div>
   </div>
 </main>

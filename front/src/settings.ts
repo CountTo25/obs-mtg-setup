@@ -46,4 +46,8 @@ export const labels: Readable<{ [key: string]: { en: string; jp: string } }> =
       en: "h",
       jp: "時",
     },
+    changeLanguage: {
+      en: "Switch to Japanese",
+      jp: "英語に変更する",
+    },
   });

@@ -79,7 +79,7 @@
       </tr>
     </tbody>
   </table>
-  <div class="text-center">
+  <div class="text-center mt-1">
     <div
       on:click={() => {
         mana = {
@@ -93,7 +93,7 @@
       }}
       class="p-1 w-100 btn-big"
     >
-      reset
+      消す
     </div>
   </div>
 </div>
